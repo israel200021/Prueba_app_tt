@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CardWidget extends StatelessWidget {
   const CardWidget({super.key});
-  
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -18,16 +18,16 @@ class CardWidget extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                  const Text(
-                    'Conectar Glucómetro',
-                    style: TextStyle(
+                const Text(
+                  'Conectar Glucómetro',
+                  style: TextStyle(
                     fontSize: 20,
                     fontFamily: 'Gudea',
                   ),
                 ),
                 const Text(
-                    'Bluetooth',
-                    style: TextStyle(
+                  'Bluetooth',
+                  style: TextStyle(
                     fontSize: 15,
                     fontStyle: FontStyle.italic,
                   ),
@@ -36,30 +36,29 @@ class CardWidget extends StatelessWidget {
                 Align(
                   alignment: Alignment.center,
                   child: TextButton(
-                    onPressed: () {},
-                    child: const Text(
-                      'CONECTAR AHORA',
-                      style: TextStyle(
-                        color: Colors.blue,
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    )
-                  ),
+                      onPressed: () {},
+                      child: const Text(
+                        'CONECTAR AHORA',
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      )),
                 ),
               ],
             ),
           ),
           const Expanded(
             child: FadeInImage(
-              image: AssetImage('assets/gota.jpg'),
+              image: AssetImage('assets/gota_sangre.png'),
               placeholder: AssetImage('assets/imgCarga.jpg'),
               width: 120,
               height: 120,
               fit: BoxFit.cover,
               fadeInDuration: Duration(milliseconds: 200),
             ),
-          ),          
+          ),
         ],
       ),
     );

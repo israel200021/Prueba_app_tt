@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>827011803350-1md3n9q7pd0veudlk3ma9316p9qb5og8.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.827011803350-1md3n9q7pd0veudlk3ma9316p9qb5og8</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCmZ978OQHotCeNumazt4A-FSoqW0F457M</string>
+	<key>GCM_SENDER_ID</key>
+	<string>827011803350</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.flutterApplicationTt.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>regluc-ab13f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>regluc-ab13f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:827011803350:ios:9d5b476c8f507e8b4ac177</string>
+	<key>DATABASE_URL</key>
+	<string>https://regluc-ab13f-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>

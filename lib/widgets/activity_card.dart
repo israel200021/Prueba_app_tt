@@ -121,22 +121,7 @@
 // class _WaterGlassState extends State<WaterGlass> {
 //   bool isFilled = false;
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return IconButton(
-//       icon: Icon(
-//         isFilled ? widget.icon : widget.icon,
-//         color:
-//             isFilled ? const Color.fromARGB(255, 193, 194, 196) : widget.color,
-//       ),
-//       onPressed: () {
-//         setState(() {
-//           isFilled = !isFilled;
-//         });
-//       },
-//     );
-//   }
-// }
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 
 class ActivityCard extends StatefulWidget {
@@ -241,8 +226,25 @@ class _ActivityCardState extends State<ActivityCard> {
         ),
         const SizedBox(height: 16),
         ElevatedButton(
-          onPressed: () {
-            // Acción al hacer clic en el botón de insertar
+          onPressed: () async {
+            double aguaConsumida = 2;
+            String fechaActual = DateTime.now().toIso8601String();
+
+            // Obtener una referencia a la base de datos en tiempo real
+            final DatabaseReference dbRef = FirebaseDatabase.instance.ref();
+
+            // Crear una nueva entrada en la base de datos en el nodo "registroActividades"
+            try {
+              await dbRef.child('registroActividades').push().set({
+                'cantidad': aguaConsumida,
+                'fecha':
+                    fechaActual, // Cambiado temporalmente para identificar la entrada sin autenticación
+                'tipo': 'agua',
+              });
+              print('Datos de agua consumida almacenados en la base de datos.');
+            } catch (error) {
+              print('Error al almacenar los datos: $error');
+            }
           },
           child: const Text('Insertar'),
         ),

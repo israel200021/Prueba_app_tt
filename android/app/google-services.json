@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "827011803350",
+    "firebase_url": "https://regluc-ab13f-default-rtdb.firebaseio.com",
+    "project_id": "regluc-ab13f",
+    "storage_bucket": "regluc-ab13f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827011803350:android:cea1343fd5b21d1f4ac177",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_tt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827011803350-d3lqnsj73q4r1t187vgp42ku4rpq05vb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmNxSdl1pqoyIPoh3pEuL0akHIVwbR5w4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827011803350-d3lqnsj73q4r1t187vgp42ku4rpq05vb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "827011803350-1md3n9q7pd0veudlk3ma9316p9qb5og8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterApplicationTt.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

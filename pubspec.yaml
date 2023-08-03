@@ -37,6 +37,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_vector_icons: ^2.0.0
   fl_chart: ^0.63.0
+  firebase_core: ^2.15.0
+  firebase_database: ^10.0.0  
 
 dev_dependencies:
   flutter_test:

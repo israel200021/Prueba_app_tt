@@ -9,12 +9,12 @@ class BeberAguaScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mi Pantalla'),
+        title: const Text('Mi Pantalla'),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         // Utiliza SingleChildScrollView para evitar un tamaño infinito
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: EdgeInsets.all(16.0),
           child: Column(
             children: [
               ActivityCard(
@@ -23,7 +23,9 @@ class BeberAguaScreen extends StatelessWidget {
                       'Este es un párrafo con texto donde puedes escribir más detalles sobre los datos personales o lo que desees.',
                   imagePath: 'assets/registrodeagua.png',
                   icon1: MaterialCommunityIcons.cup,
-                  color1: Colors.blue),
+                  color1: Colors.blue,
+                  maxConsumed: 2),
+
               // Otros widgets de tu pantalla
             ],
           ),

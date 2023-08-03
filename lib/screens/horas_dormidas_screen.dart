@@ -11,10 +11,10 @@ class HorasDormidasScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Mi Pantalla'),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         // Utiliza SingleChildScrollView para evitar un tamaño infinito
         child: Padding(
-          padding: const EdgeInsets.all(16.0),
+          padding: EdgeInsets.all(16.0),
           child: Column(
             children: [
               ActivityCard(
@@ -24,6 +24,7 @@ class HorasDormidasScreen extends StatelessWidget {
                 imagePath: 'assets/horasDormidas.png',
                 icon1: Ionicons.moon,
                 color1: Color.fromARGB(255, 239, 212, 40),
+                maxConsumed: 2,
               ),
               // Otros widgets de tu pantalla
             ],

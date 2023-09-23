@@ -23,7 +23,7 @@ class HorasDormidasScreen extends StatelessWidget {
                     'Este es un párrafo con texto donde puedes escribir más detalles sobre los datos personales o lo que desees.',
                 imagePath: 'assets/horasDormidas.png',
                 icon1: Ionicons.moon,
-                color1: Color.fromARGB(255, 239, 212, 40),
+                color1: Color.fromARGB(255, 179, 43, 43),
                 maxConsumed: 2,
               ),
               // Otros widgets de tu pantalla
